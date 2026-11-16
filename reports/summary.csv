@@ -1,0 +1,4 @@
+condition,tasks,compiles,faithful_v1,faithful_v2,avg_tool_calls,avg_tokens,avg_seconds,cut_off,too_large
+no_tools,28,79%,68%,64%,0.0,2843.5,14.1,5,0
+compiler_only,28,79%,64%,57%,1.9,5945.5,35.7,4,1
+all_tools,28,79%,68%,57%,2.6,8043.4,43.9,3,3
