@@ -1,5 +1,7 @@
 # 🧰 dotnet-dev-tools: an MCP server that gives AI assistants real .NET knowledge
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 A **Model Context Protocol (MCP) server** for .NET developers. Instead of guessing, an AI assistant can **compile C# with the real .NET 10 SDK**, look up **which namespace a type lives in**, list the **real members** of ASP.NET Core types, **search the official docs**, and try a **fine-tuned fixer model**, all as standard MCP tools that work in GitHub Copilot, Claude Desktop, Cursor or your own agent.
 
 **🔗 Live playground:** [dotnet-dev-mcp.streamlit.app](https://dotnet-dev-mcp.streamlit.app/) (talks to the server over the real MCP protocol)
@@ -179,3 +181,12 @@ dotnet-dev-mcp/
 ## Tech stack
 
 Python · MCP Python SDK v2 · C# / .NET 10 (System.Reflection.Metadata) · Groq (gpt-oss-20b) · ChromaDB · sentence-transformers · BM25 · llama.cpp (GGUF) · Streamlit · GitHub Copilot (agent mode) · MCP Inspector
+
+## License
+
+Code: [MIT](LICENSE) © 2026 Alyasar Abdulsattar Khatri.
+
+Third-party content keeps its own license (details in [NOTICE.md](NOTICE.md)):
+- **ASP.NET Core documentation** text in `data/` © Microsoft, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- **API names** read from the .NET 10 reference assemblies (MIT)
+- **Models** downloaded at startup: bge-small-en-v1.5 (MIT), ms-marco-MiniLM-L-6-v2 (Apache 2.0), and the optional Qwen2.5-Coder fine-tune (Apache 2.0)
